@@ -1,0 +1,23 @@
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import com.example.MathBot.repository.UserRepository;
+import com.example.MathBot.model.User;
+
+@Service
+public class LoginService {
+
+    @Autowired
+    private UserRepository userRepository;
+
+    public boolean validateUser(String name, String password) {
+      // Simple validation logic
+      return "admin".equals(name) && "password".equals(password);
+      
+      //  User user = userRepository.findByName(name);
+      //  if (user != null) {
+      //      // You should hash passwords in a real application
+      //      return password.equals(user.getPassword());
+     //   }
+      //  return false;
+    }
+}
