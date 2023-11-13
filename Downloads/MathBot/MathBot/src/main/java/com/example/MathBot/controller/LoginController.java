@@ -1,6 +1,6 @@
 package com.example.MathBot.controller;
 
-//import com.example.MathBot.service.LoginService;
+import com.example.MathBot.controller.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.google.common.util.concurrent.Service;
 import com.example.MathBot.controller.LoginController;
@@ -11,19 +11,20 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
+
 @Controller
 @SessionAttributes("name")
 public class LoginController<service> {
  
     @Autowired
-    private LoginService service; // Autowire the LoginService
+    private Service service; // Autowire the LoginService
  
     // ...
  
     @RequestMapping(value="/login", method = RequestMethod.POST)
     public String showWelcomePage(ModelMap model, @RequestParam String name, @RequestParam String password){
  
-        boolean isValidUser = service.validateUser(name, password); // Use the service here
+        boolean isValidUser = ((Object) service).validateUser(name, password); // Use the service here
  
         if (!isValidUser) {
             model.put("errorMessage", "Access Denied , Invalid Credentials");
