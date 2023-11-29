@@ -1,0 +1,20 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\MathBot",
+    "\\MathBot\\MathBot",
+    "\\MathBot\\MathBot\\src",
+    "\\MathBot\\MathBot\\src\\main",
+    "\\MathBot\\MathBot\\src\\main\\java",
+    "\\MathBot\\MathBot\\src\\main\\java\\com",
+    "\\MathBot\\MathBot\\src\\main\\java\\com\\example",
+    "\\MathBot\\MathBot\\src\\main\\java\\com\\example\\MathBot",
+    "\\MathBot\\MathBot\\src\\main\\java\\com\\example\\MathBot\\controller",
+    "\\MathBot\\MathBot\\src\\main\\resources",
+    "\\MathBot\\MathBot\\src\\main\\webapp",
+    "\\MathBot\\MathBot\\src\\main\\webapp\\WEB-INF",
+    "\\MathBot\\MathBot\\src\\main\\webapp\\WEB-INF\\jsp"
+  ],
+  "SelectedNode": "\\MathBot\\MathBot\\src\\main\\webapp",
+  "PreviewInSolutionExplorer": false
+}
