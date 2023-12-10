@@ -15,5 +15,7 @@
         <h1>Beep boop</h1>
         <h2>Welcome to MathBot - more features coming soon! </h2>
                 <a href="/main-page" > Navigate to the main page </a>
+                <br>
+                <a href="/register">Register</a>
     </body>
 </html>
